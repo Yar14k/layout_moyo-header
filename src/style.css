@@ -3,17 +3,27 @@ body {
     margin: 0;
     font-family: Roboto, sans-serif;
     font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  width: 100%;
 }
 
 .top-bar {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 10px 40px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 img {
-  width: 40px;
+  max-width: 40px;
   height: 40px;
+  display: block;
 }
 
 nav ul {
@@ -26,6 +36,9 @@ nav ul {
 .nav-item {
     margin-left: 30px;
 }
+.nav-item:first-child {
+  margin-left: 0;
+}
 
 .nav-link {
     display: inline-block;
@@ -33,9 +46,10 @@ nav ul {
     color: black;
     transition: color 0.2s;
     font-size: 12px;
-    padding: 5px 0;
+    padding: 0;
     height: 40px;
     line-height: 40px;
+    text-align: center;
 
 }
 
